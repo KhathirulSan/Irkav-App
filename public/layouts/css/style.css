@@ -1,0 +1,106 @@
+.sidebar {
+    width: 225px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff !important;
+    border-right: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.navlink {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #4a5568;
+}
+
+.navlink:hover {
+    background-color: #f7fafc;
+    color: #2d3748;
+}
+
+.main-content {
+    margin-left: 200px;
+    /* padding: 20px; */
+
+    /* width: calc(100% - 200px); */
+    box-sizing: border-box;
+}
+.no-underline {
+    text-decoration: none;
+}
+
+.status-diterima,
+.status-ditolak,
+.status-belum-dibaca {
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+
+.status-action-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* .status-label {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+} */
+
+.action-buttons {
+    display: flex;
+}
+
+.action-button {
+    margin-left: 4px;
+}
+/* Menambahkan spesifik untuk masing-masing status */
+.status-diterima {
+    background-color: #28a745 !important; /* Warna hijau yang lebih lembut */
+    color: white;
+}
+
+.status-ditolak {
+    background-color: #dc3545 !important; /* Warna merah yang lebih lembut */
+    color: white;
+}
+
+.status-belum-dibaca {
+    background-color: #ffc107 !important; /* Warna kuning yang lebih lembut */
+    color: black;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-group span {
+    margin: 10px;
+    font-weight: 500;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
